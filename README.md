@@ -1,5 +1,43 @@
 ## 用法
 
+### 帮助信息
+```bash
+usage: blog_parse.py [-h] [-b {cnblogs,csdn,evernote,jianshu,others}]
+                     [-p OUT_PATH] [-o OUT_FILE] [-u URL] [-c CONTENT_ID]
+                     [-t TITLE_ID] [-l LOCAL_HTML] [-i CLOUT_IMAGE_BASE]
+                     [-f CLOUT_IMAGE_FOLDER]
+
+reprint blog with markdown
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+common parameters in common blogs:
+  -b {cnblogs,csdn,evernote,jianshu,others}, --blog_name {cnblogs,csdn,evernote,jianshu,others}
+                        which blog the url is from(default cnblogs)
+  -p OUT_PATH, --out_path OUT_PATH
+                        path to save markdown file( default current folder)
+  -o OUT_FILE, --out_file OUT_FILE
+                        file to save markdown
+
+blog(other than evernote) specific parameters:
+  -u URL, --url URL     url to parse
+  -c CONTENT_ID, --content_id CONTENT_ID
+                        xpath of content body
+  -t TITLE_ID, --title_id TITLE_ID
+                        xpath of title
+
+evernote specific parameters:
+  -l LOCAL_HTML, --local_html LOCAL_HTML
+                        full path of local evernote export html
+  -i CLOUT_IMAGE_BASE, --clout_image_base CLOUT_IMAGE_BASE
+                        aliyun image link base
+  -f CLOUT_IMAGE_FOLDER, --clout_image_folder CLOUT_IMAGE_FOLDER
+                        aliyun image link folder
+```
+
+<hr / >
+
 ### 博客园、CSDN、简书博客
 * 博客园：`python blog_parse.py -u https://www.cnblogs.com/zhaof/p/6953241.html -p C:/Users/14910/Desktop`
 * CSDN：`python blog_parse.py -b csdn -u https://blog.csdn.net/work_you_will_see/article/details/84638750 -p C:/Users/14910/Desktop`
