@@ -1,0 +1,6 @@
+*.md
+!README.md
+html2text_old/
+html2text/
+evernote_related/*
+etree.py
