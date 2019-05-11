@@ -39,7 +39,7 @@ evernote specific parameters:
                         aliyun image link folder
 ```
 
-<hr / >
+<hr />
 
 ### 博客园、CSDN、简书博客
 * 博客园：`python blog_parse.py -u https://www.cnblogs.com/zhaof/p/6953241.html -p C:/Users/14910/Desktop`
@@ -50,9 +50,11 @@ evernote specific parameters:
 
 ### 自建博客
 * 得到title的xpath：
+
 ![得到title的xpath.png](https://showteeth.oss-cn-beijing.aliyuncs.com/blog_img/得到title的xpath.png)
 
 * 得到content的xpath：
+
 ![得到content的xpath.png](https://showteeth.oss-cn-beijing.aliyuncs.com/blog_img/得到content的xpath.png)
 
 * 使用命令：`python blog_parse.py -b others -c //*[@id=\"posts\"]/article/div/div[1] -t //*[@id=\"posts\"]/article/div/header/h1 -u http://showteeth.tech/posts/56982.html -p  C:/Users/14910/Desktop`
@@ -82,5 +84,5 @@ evernote specific parameters:
 
 - [x] 印象笔记导出之前需要将其图片名称进行修改--->两图片的空格替换为`%20`
 - [x] 参数分组
-- [ ] 爬取整个博客然后转化为markdown(不是很实用)
-- [ ] 增加配置文件
+- [ ] 爬取博客分类然后转化为markdown--->比如这个链接内的[内容](http://rvdsd.top/categories/%E7%94%9F%E7%89%A9%E7%BB%9F%E8%AE%A1/)
+- [x] 增加requirements.txt
