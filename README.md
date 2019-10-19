@@ -1,3 +1,4 @@
+[!blog__reprint](https://img.shields.io/badge/showteeth-blog__reprint-yellow)(https://github.com/showteeth/blog_reprint)
 [![GitHub forks](https://img.shields.io/github/forks/showteeth/blog_reprint)](https://github.com/showteeth/blog_reprint/network)
 
 # blog_reprint
