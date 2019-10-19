@@ -1,3 +1,5 @@
+[![GitHub forks](https://img.shields.io/github/forks/showteeth/blog_reprint)](https://github.com/showteeth/blog_reprint/network)
+
 # blog_reprint
 blog_reprint是用来将在线或者本地的HTML装换为markdown格式文件的工具，现在内置支持的博客包括：CSDN、博客园、简书以及印象笔记(导出本地HTML文件)，具体的用法见下。
 
