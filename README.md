@@ -1,8 +1,14 @@
+# blog_reprint
 [![blog__reprint](https://img.shields.io/badge/showteeth-blog__reprint-yellow)](https://github.com/showteeth/blog_reprint)
+[![GitHub stars](https://img.shields.io/github/stars/showteeth/blog_reprint)](https://github.com/showteeth/blog_reprint)
 [![GitHub forks](https://img.shields.io/github/forks/showteeth/blog_reprint)](https://github.com/showteeth/blog_reprint/network)
 
-# blog_reprint
-blog_reprint是用来将在线或者本地的HTML装换为markdown格式文件的工具，现在内置支持的博客包括：CSDN、博客园、简书以及印象笔记(导出本地HTML文件)，具体的用法见下。
+`blog_reprint`是用来将**在线**或者**本地**的`HTML`转换为`markdown`格式文件的工具，现在内置支持的博客包括：
+* **CSDN**
+* **博客园**
+* **简书**
+* **印象笔记(导出本地HTML文件)**
+* **自建博客**
 
 ## 用法
 
@@ -44,23 +50,23 @@ evernote specific parameters:
 
 <hr />
 
-### 博客园、CSDN、简书博客
-* 博客园：`python blog_parse.py -u https://www.cnblogs.com/zhaof/p/6953241.html -p C:/Users/14910/Desktop`
-* CSDN：`python blog_parse.py -b csdn -u https://blog.csdn.net/work_you_will_see/article/details/84638750 -p C:/Users/14910/Desktop`
-* 简书博客：`python blog_parse.py -b jianshu -u https://www.jianshu.com/p/95331e7a98cd -p C:/Users/14910/Desktop`
+### 博客园、CSDN、简书
+* **博客园**：`python blog_parse.py -u https://www.cnblogs.com/zhaof/p/6953241.html -p C:/Users/14910/Desktop`
+* **CSDN**：`python blog_parse.py -b csdn -u https://blog.csdn.net/work_you_will_see/article/details/84638750 -p C:/Users/14910/Desktop`
+* **简书博客**：`python blog_parse.py -b jianshu -u https://www.jianshu.com/p/95331e7a98cd -p C:/Users/14910/Desktop`
 
 <hr />
 
 ### 自建博客
 * 得到title的xpath：
 
-![得到title的xpath.png](https://showteeth.oss-cn-beijing.aliyuncs.com/blog_img/得到title的xpath.png)
+![get_title_xpath](https://showteeth.oss-cn-beijing.aliyuncs.com/blog_img/get_title_xpath.png)
 
 * 得到content的xpath：
 
-![得到content的xpath.png](https://showteeth.oss-cn-beijing.aliyuncs.com/blog_img/得到content的xpath.png)
+![get_content_xpath](https://showteeth.oss-cn-beijing.aliyuncs.com/blog_img/get_content_xpath.png)
 
-* 使用命令：`python blog_parse.py -b others -c //*[@id=\"posts\"]/article/div/div[1] -t //*[@id=\"posts\"]/article/div/header/h1 -u http://showteeth.tech/posts/56982.html -p  C:/Users/14910/Desktop`
+* 使用命令：`python blog_parse.py -b others -c content_xpath -t title_xpath -u post_url -p  C:/Users/14910/Desktop`
 
 <hr />
 
