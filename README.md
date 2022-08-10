@@ -2,6 +2,7 @@
 [![blog__reprint](https://img.shields.io/badge/showteeth-blog__reprint-yellow)](https://github.com/showteeth/blog_reprint)
 [![GitHub stars](https://img.shields.io/github/stars/showteeth/blog_reprint)](https://github.com/showteeth/blog_reprint)
 [![GitHub forks](https://img.shields.io/github/forks/showteeth/blog_reprint)](https://github.com/showteeth/blog_reprint/network)
+[![License](https://img.shields.io/github/license/showteeth/blog_reprint?label=license)](https://opensource.org/licenses/MIT)
 
 `blog_reprint`是用来将**在线**或者**本地**的`HTML`转换为`markdown`格式文件的工具，现在内置支持的博客包括：
 * **CSDN**
