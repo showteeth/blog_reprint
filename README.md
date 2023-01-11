@@ -1,4 +1,7 @@
 # blog_reprint
+
+<img src = "https://showteeth.oss-cn-beijing.aliyuncs.com/blog_img/blog_reprint_logo.png" align = "right" width = "200"/>
+
 [![blog__reprint](https://img.shields.io/badge/showteeth-blog__reprint-yellow)](https://github.com/showteeth/blog_reprint)
 [![GitHub stars](https://img.shields.io/github/stars/showteeth/blog_reprint)](https://github.com/showteeth/blog_reprint)
 [![GitHub forks](https://img.shields.io/github/forks/showteeth/blog_reprint)](https://github.com/showteeth/blog_reprint/network)
