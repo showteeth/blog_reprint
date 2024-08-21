@@ -100,9 +100,8 @@ def convert_to_markdown(content):
     logging.info("start to convert to markdown")
     markdown_content=h.handle(content)
     return markdown_content
-
 def write_to_markdown(out_path,out_file,content,title):
-    out_file_path=out_path + '/' + out_file if out_file else out_path + '/' + title + '.md'
+    out_file_path=out_path + '/' + out_file if out_file else out_path + '/' + title.replace("\n", "").replace("\t", "").replace(" ", "") + '.md'
     # is path exists
     isExists=os.path.exists(out_path)
     if not isExists:
